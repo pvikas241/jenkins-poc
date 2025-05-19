@@ -7,7 +7,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Before calling shared lib'
-                helloWorld()
+                helloworld()
                 echo 'After calling shared lib'
             }
         }
