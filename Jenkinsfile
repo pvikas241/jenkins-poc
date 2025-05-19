@@ -4,15 +4,11 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('Test') {
             steps {
+                echo 'Before calling shared lib'
                 helloWorld()
-            }
-        }
-
-        stage('Hi') {
-            steps {
-                hiWorld()
+                echo 'After calling shared lib'
             }
         }
     }
